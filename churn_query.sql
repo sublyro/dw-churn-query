@@ -178,7 +178,7 @@ WITH emea_active AS
 	 	p.snippet_revision, 
 	 	p.include_geotargeting, 
 	 	p.include_jquery, 
-	 	p.js_file_size 
+	 	p.js_file_size --, 
 	 	--p.usage_cumulative
 	FROM emea
 	JOIN cust_gae_account p ON p.admin_account_id = emea.account_number
